@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white/*(paragraphs)*/: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray /*(background, headings, buttons)*/: hsl(0, 0%, 95%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.container{
+    display: flex;
+    height: 100vh; 
+    justify-content: center; 
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 60%;
+    height: 70vh;
+}
+.sedan{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: var(--Bright-orange);
+    border-radius: 4px 0 0 4px;
+    max-height: 100%;
+}
+.sedan img{
+    width: 70px;
+    margin-bottom: 24px;
+}
+.sedan h1{
+    color: var(--Transparent-white);
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+.sedan p{
+    color: var(--Transparent-white);
+    font-size: 1rem;
+    margin-bottom: 80px;
+    line-height: 24px;
+    font-family: "Lexend Deca", sans-serif;
+}
+.sedan button{
+    background-color: var(--Transparent-white);
+    padding: 14px 10px;
+    color: var(--Bright-orange);
+    width: 70%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    margin-top: 15px;
+}
+.luxury{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 4px 4px 0;
+    max-height: 100%;
+}
+.luxury img{
+    width: 70px;
+    margin-bottom: 24px;
+}
+.luxury h1{
+    color: var(--Transparent-white);
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+.luxury p{
+    color: var(--Transparent-white);
+    font-size: 1rem;
+    margin-bottom: 80px;
+    line-height: 24px;
+    font-family: "Lexend Deca", sans-serif;
+}
+.luxury button{
+    background-color: var(--Transparent-white);
+    padding: 14px 10px;
+    width: 70%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--Very-dark-cyan);
+    margin-top: 15px;
+}
+.SUVs{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: var(--Dark-cyan);
+    max-height: 100%;
+}
+.SUVs img{
+    width: 70px;
+    margin-bottom: 24px;
+}
+.SUVs h1{
+    color: var(--Transparent-white);
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+.SUVs p{
+    color: var(--Transparent-white);
+    font-size: 1rem;
+    margin-bottom: 80px;
+    line-height: 24px;
+    font-family: "Lexend Deca", sans-serif;
+}
+.SUVs button{
+    background-color: var(--Transparent-white);
+    padding: 14px 10px;
+    width: 70%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--Dark-cyan);
+    margin-top: 15px;
+}
+@media (max-width: 768px){
+    .container{
+        padding: 80px 0;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        height: 100vh;
+    }
+    .sedan{
+        border-radius: 4px 4px 0 0;
+        margin-top: 40px;
+    }
+    .luxury{
+        border-radius: 0 0 4px 4px;
+        margin-bottom: 40px;
+    }
+   
+}
